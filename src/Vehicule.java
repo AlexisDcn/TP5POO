@@ -2,7 +2,13 @@ public class Vehicule {
     private Marque marque;
     private String numImmat;
     private int vitesseMax = 100;
-    private int vitesseActuelle = 0;
+    private int vitesseActuelle;
+
+    public Vehicule(Marque marque, String numImmat) {
+        this.marque = marque;
+        this.numImmat = numImmat;
+        this.vitesseActuelle = 0;
+    }
 
     public Vehicule(Marque marque, String numImmat, int vitesseActuelle) {
         this.marque = marque;
@@ -13,6 +19,9 @@ public class Vehicule {
     public void accelerer(int n) {
         if (vitesseActuelle + n < vitesseMax) {
             vitesseActuelle += n;
+        }
+        else if(vitesseActuelle >= vitesseMax) {
+            
         }
         else {
             vitesseActuelle = vitesseMax;
