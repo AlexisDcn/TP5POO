@@ -39,7 +39,7 @@ public class Voiture extends Vehicule {
 
     @Override
     public String toString() {
-        return "Voiture --> " + getMarque() + " / " + getNumImmat() + " / vitesseMax = " + getVitesseMax() + " / vitesse = " + getVitesseActuelle() +
+        return "Voiture = " + getMarque() + " / " + getNumImmat() + " / vitesseMax = " + getVitesseMax() + " / vitesse = " + getVitesseActuelle() +
                " modele : " + modele + " " + couleur + " avec " + nombrePortes + " portes";
     }
 }

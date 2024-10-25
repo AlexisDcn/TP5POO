@@ -54,11 +54,17 @@ public class Vehicule {
         return vitesseMax;
     }
 
+    public int setVitesseActuelle(int vitesseActuelle) {
+        return this.vitesseActuelle = vitesseActuelle;
+    }
+
     @Override
     public String toString() {
         return "Vehicule [marque=" + marque + ", numImmat=" + numImmat + ", vitesseMax=" + vitesseMax
                 + ", vitesseActuelle=" + vitesseActuelle + "]";
     }
+
+    
 
     
 

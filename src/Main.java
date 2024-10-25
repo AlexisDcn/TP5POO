@@ -20,11 +20,17 @@ class Main {
     // System.out.println(v1);
     // System.out.println(v2);
 
-    Voiture vt1 = new Voiture(Marque.Renault, "123AB81", 190, Modele.BERLINE, "Verte", 5);
-    System.out.println(vt1);
+    // Voiture vt1 = new Voiture(Marque.Renault, "123AB81", 190, Modele.BERLINE, "Verte", 5);
+    // System.out.println(vt1);
 
-    Voiture vt2 = new Voiture(Marque.Citroen, "1642BZ18", 140, Modele.BREAK);
-    vt2.accelerer(100);
-    System.out.println(vt2);
+    // Voiture vt2 = new Voiture(Marque.Citroen, "1642BZ18", 140, Modele.BREAK);
+    // vt2.accelerer(100);
+    // System.out.println(vt2);
+
+    Camion c1 = new Camion(Marque.Volvo, "567ZA90", 110, 15000, 1000);
+    System.out.println(c1);
+    c1.charger(2000);
+    c1.accelerer(80);
+    System.out.println(c1);
   }
 }
