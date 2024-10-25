@@ -47,8 +47,11 @@ class Main {
 
     System.out.println(route1);
 
+    System.out.println("--> Vehicules en exces de vitesse : ");
     route1.controleRadar(); // Affiche les immatriculations des vehicules en exces de vitesse
     route1.ralentirCamion(); // Affiche les immatriculations des camions en dessous de la moyenne
-    
+
+
+    System.out.println(route1);
   }
 }

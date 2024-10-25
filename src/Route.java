@@ -33,6 +33,7 @@ public class Route {
         for (Vehicule v : vehicules) {
             if (v.getVitesseActuelle() > vitesseMax) {
                 enExces.add(v.getNumImmat());
+                System.out.println(v.getNumImmat());
             }
         }
         return enExces;
@@ -48,7 +49,7 @@ public class Route {
 
     @Override
     public String toString() {
-        return "Route [vehicules = " + vehicules + "]";
+        return "contenu de la route :"+"\n"+"Route [vehicules = " + vehicules + "]";
     }
 
     
