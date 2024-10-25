@@ -45,4 +45,14 @@ public class Route {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Route [vehicules = " + vehicules + "]";
+    }
+
+    
+
+     
+    
 }
