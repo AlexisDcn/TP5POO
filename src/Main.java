@@ -5,6 +5,9 @@ class Main {
     Vehicule v1 = new Vehicule(Marque.Renault, "123AB81");
     Vehicule v2 = new Vehicule(Marque.Citroen, "1642BZ1", 140);
 
+    System.out.println(v1);
+    System.out.println(v2);
+    
     v1.accelerer(20);
     v2.accelerer(100);
 
