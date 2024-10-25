@@ -20,7 +20,7 @@ class Main {
     System.out.println(v1);
     System.out.println(v2);
 
-    
-
+    Voiture vt1 = new Voiture(Marque.Renault, "123AB81", 190, Modele.BERLINE, "Verte", 5);
+    System.out.println(vt1);
   }
 }

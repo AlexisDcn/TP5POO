@@ -1,7 +1,7 @@
 public class Vehicule {
-    private Marque marque;
-    private String numImmat;
-    private int vitesseMax = 100;
+    private final Marque marque;
+    private final String numImmat;
+    private final int vitesseMax = 100;
     private int vitesseActuelle;
 
     public Vehicule(Marque marque, String numImmat) {
