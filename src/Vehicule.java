@@ -19,11 +19,9 @@ public class Vehicule {
     public void accelerer(int n) {
         if (vitesseActuelle + n < vitesseMax) {
             vitesseActuelle += n;
-        }
-        else if(vitesseActuelle >= vitesseMax) {
-            
-        }
-        else {
+        } else if (vitesseActuelle >= vitesseMax) {
+
+        } else {
             vitesseActuelle = vitesseMax;
         }
     }
@@ -31,12 +29,10 @@ public class Vehicule {
     public void freiner(int n) {
         if (vitesseActuelle - n > 0) {
             vitesseActuelle -= n;
-        }
-        else {
+        } else {
             vitesseActuelle = 0;
         }
     }
-    
 
     public Marque getMarque() {
         return marque;
@@ -63,12 +59,5 @@ public class Vehicule {
         return "Vehicule [marque=" + marque + ", numImmat=" + numImmat + ", vitesseMax=" + vitesseMax
                 + ", vitesseActuelle=" + vitesseActuelle + "]";
     }
-
-    
-
-    
-
-    
-
 
 }
