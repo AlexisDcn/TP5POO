@@ -21,6 +21,14 @@ public class Voiture extends Vehicule {
         this.nombrePortes = 3; // Valeur par défaut
     }
 
+    
+    public Voiture(Marque marque, String numImmat, int vitesseActuelle, Modele modele) {
+        super(marque, numImmat, vitesseActuelle); // Appelle le constructeur de Vehicule
+        this.modele = modele;
+        this.couleur = "Blanche";
+        this.nombrePortes = 3;
+    }
+
     // Constructeur sans paramètres
     public Voiture() {
         super(Marque.Renault, "XXX-000-XXX"); // Valeurs par défaut pour marque et numImmat
